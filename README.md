@@ -12,7 +12,7 @@ mvn install
 
 ## Usage
 
-1. After building, copy `target/grizzly-virtual-threads-pool.jar` into an existing GlassFish installation, either to `glassfish/modules`, or to `glassfish/domains/domain1/lib`
+1. After building, install `target/grizzly-virtual-threads-pool.jar` into an existing GlassFish domain as a library. Either copy it to `glassfish/domains/domain1/lib` or install it via the `asadmin add-library` command
 2. Run GlassFish 7 on Java 21
 3. Edit http-thread-pool thread pool and set the `Class Name` to: `org.glassfish.grizzlyintegration.virtualthreads.VirtualThreadsExecutorService`
 
